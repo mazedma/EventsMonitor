@@ -3244,6 +3244,7 @@ id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
 id stop
+id stopButton
 id stretch
 id submenuarrow
 id submit_area
@@ -3274,6 +3275,7 @@ id textEventTypeValue
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTimeRamaining
 id textTop
 id text_input_end_icon
 id text_input_error_icon
@@ -3472,6 +3474,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_after_event
 layout activity_main
+layout activity_sound
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3745,6 +3748,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string subscribe_label
 string title_activity_after_event
+string title_activity_sound
 string unsubscribe_label
 string ws_action_drawer_content_description
 string ws_navigation_drawer_content_description

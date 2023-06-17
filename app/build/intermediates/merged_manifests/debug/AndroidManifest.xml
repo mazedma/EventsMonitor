@@ -50,10 +50,13 @@
             android:value="true" />
 
         <activity
+            android:name="com.samsung.android.eventsmonitor.SoundActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sound" />
+        <activity
             android:name="com.samsung.android.eventsmonitor.AfterEventActivity"
             android:exported="true"
-            android:label="@string/title_activity_after_event" >
-        </activity>
+            android:label="@string/title_activity_after_event" />
         <activity
             android:name="com.samsung.android.eventsmonitor.MainActivity"
             android:exported="true" >

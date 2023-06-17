@@ -4,6 +4,7 @@ package com.samsung.android.eventsmonitor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,16 +21,25 @@ public final class ActivityAfterEventBinding implements ViewBinding {
   private final BoxInsetLayout rootView;
 
   @NonNull
+  public final Button stopButton;
+
+  @NonNull
   public final TextView textEventTime;
 
   @NonNull
   public final TextView textEventType;
 
-  private ActivityAfterEventBinding(@NonNull BoxInsetLayout rootView,
-      @NonNull TextView textEventTime, @NonNull TextView textEventType) {
+  @NonNull
+  public final TextView textTimeRamaining;
+
+  private ActivityAfterEventBinding(@NonNull BoxInsetLayout rootView, @NonNull Button stopButton,
+      @NonNull TextView textEventTime, @NonNull TextView textEventType,
+      @NonNull TextView textTimeRamaining) {
     this.rootView = rootView;
+    this.stopButton = stopButton;
     this.textEventTime = textEventTime;
     this.textEventType = textEventType;
+    this.textTimeRamaining = textTimeRamaining;
   }
 
   @Override
@@ -59,6 +69,12 @@ public final class ActivityAfterEventBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.stopButton;
+      Button stopButton = ViewBindings.findChildViewById(rootView, id);
+      if (stopButton == null) {
+        break missingId;
+      }
+
       id = R.id.textEventTime;
       TextView textEventTime = ViewBindings.findChildViewById(rootView, id);
       if (textEventTime == null) {
@@ -71,7 +87,14 @@ public final class ActivityAfterEventBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAfterEventBinding((BoxInsetLayout) rootView, textEventTime, textEventType);
+      id = R.id.textTimeRamaining;
+      TextView textTimeRamaining = ViewBindings.findChildViewById(rootView, id);
+      if (textTimeRamaining == null) {
+        break missingId;
+      }
+
+      return new ActivityAfterEventBinding((BoxInsetLayout) rootView, stopButton, textEventTime,
+          textEventType, textTimeRamaining);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

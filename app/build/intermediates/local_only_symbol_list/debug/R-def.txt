@@ -7,14 +7,18 @@ drawable button_background
 drawable ic_launcher
 id app_name
 id btnSubscribe
+id stopButton
+id text
 id textEventTime
 id textEventTimeDesc
 id textEventTimeValue
 id textEventType
 id textEventTypeDesc
 id textEventTypeValue
+id textTimeRamaining
 layout activity_after_event
 layout activity_main
+layout activity_sound
 raw alert_sound
 string app_name
 string empty_label
@@ -25,4 +29,5 @@ string not_all_health_events_available
 string not_all_permissions_granted
 string subscribe_label
 string title_activity_after_event
+string title_activity_sound
 string unsubscribe_label

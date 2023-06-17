@@ -12,5 +12,6 @@
     <string description="Some of permissions not granted" name="not_all_permissions_granted">Not all permissions granted.</string>
     <string description="Text on subscribe/unsubscribe button" name="subscribe_label">Subscribe</string>
     <string name="title_activity_after_event">AfterEventActivity</string>
+    <string name="title_activity_sound">SoundActivity</string>
     <string description="Text on subscribe/unsubscribe button" name="unsubscribe_label">Unsubscribe</string>
 </resources>
