@@ -3278,6 +3278,8 @@ int id textStart 0x7f0a01c4
 int id textTimeRamaining 0x7f0a0210
 int id textTop 0x7f0a01c5
 int id textView 0x7f0a0213
+int id textViewCurrentTime 0x7f0a0218
+int id textViewEventTime 0x7f0a0219
 int id textViewStopwatch 0x7f0a0217
 int id text_input_end_icon 0x7f0a01c6
 int id text_input_error_icon 0x7f0a01c7
@@ -3477,6 +3479,7 @@ int layout abc_tooltip 0x7f0d001b
 int layout activity_after_event 0x7f0d001c
 int layout activity_call 0x7f0d0082
 int layout activity_main 0x7f0d001d
+int layout activity_seizure_end 0x7f0d0083
 int layout activity_sound 0x7f0d0081
 int layout custom_dialog 0x7f0d001e
 int layout design_bottom_navigation_item 0x7f0d001f
@@ -3752,6 +3755,7 @@ int string status_bar_notification_info_overflow 0x7f1100a9
 int string subscribe_label 0x7f1100aa
 int string title_activity_after_event 0x7f1100ab
 int string title_activity_call 0x7f1100b0
+int string title_activity_seizure_end 0x7f1100b1
 int string title_activity_sound 0x7f1100af
 int string unsubscribe_label 0x7f1100ac
 int string ws_action_drawer_content_description 0x7f1100ad

@@ -8,12 +8,20 @@
         "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-main-41:/drawable/ic_launcher.png"
     },
     {
-        "merged": "com.samsung.android.eventsmonitor.app-merged_res-39:/layout_activity_call.xml.flat",
-        "source": "com.samsung.android.eventsmonitor.app-main-41:/layout/activity_call.xml"
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-merged_res-39:/layout_activity_seizure_end.xml.flat",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-main-41:/layout/activity_seizure_end.xml"
     },
     {
         "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-merged_res-39:/layout_activity_sound.xml.flat",
         "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-main-41:/layout/activity_sound.xml"
+    },
+    {
+        "merged": "com.samsung.android.eventsmonitor.app-merged_res-39:/layout_activity_sound.xml.flat",
+        "source": "com.samsung.android.eventsmonitor.app-main-41:/layout/activity_sound.xml"
+    },
+    {
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-merged_res-39:/layout_activity_call.xml.flat",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-main-41:/layout/activity_call.xml"
     },
     {
         "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-merged_res-39:/raw_alert_sound.mp3.flat",

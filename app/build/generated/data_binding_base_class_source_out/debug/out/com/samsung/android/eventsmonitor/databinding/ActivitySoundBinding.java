@@ -27,13 +27,22 @@ public final class ActivitySoundBinding implements ViewBinding {
   public final TextView textView;
 
   @NonNull
+  public final TextView textViewCurrentTime;
+
+  @NonNull
+  public final TextView textViewEventTime;
+
+  @NonNull
   public final TextView textViewStopwatch;
 
   private ActivitySoundBinding(@NonNull BoxInsetLayout rootView, @NonNull Button stopSoundButton,
-      @NonNull TextView textView, @NonNull TextView textViewStopwatch) {
+      @NonNull TextView textView, @NonNull TextView textViewCurrentTime,
+      @NonNull TextView textViewEventTime, @NonNull TextView textViewStopwatch) {
     this.rootView = rootView;
     this.stopSoundButton = stopSoundButton;
     this.textView = textView;
+    this.textViewCurrentTime = textViewCurrentTime;
+    this.textViewEventTime = textViewEventTime;
     this.textViewStopwatch = textViewStopwatch;
   }
 
@@ -76,6 +85,18 @@ public final class ActivitySoundBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textViewCurrentTime;
+      TextView textViewCurrentTime = ViewBindings.findChildViewById(rootView, id);
+      if (textViewCurrentTime == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewEventTime;
+      TextView textViewEventTime = ViewBindings.findChildViewById(rootView, id);
+      if (textViewEventTime == null) {
+        break missingId;
+      }
+
       id = R.id.textViewStopwatch;
       TextView textViewStopwatch = ViewBindings.findChildViewById(rootView, id);
       if (textViewStopwatch == null) {
@@ -83,7 +104,7 @@ public final class ActivitySoundBinding implements ViewBinding {
       }
 
       return new ActivitySoundBinding((BoxInsetLayout) rootView, stopSoundButton, textView,
-          textViewStopwatch);
+          textViewCurrentTime, textViewEventTime, textViewStopwatch);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

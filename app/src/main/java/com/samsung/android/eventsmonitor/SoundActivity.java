@@ -8,7 +8,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.samsung.android.eventsmonitor.CallActivity;
 import com.samsung.android.eventsmonitor.databinding.ActivitySoundBinding;
 
 import java.text.ParseException;
@@ -26,6 +25,8 @@ public class SoundActivity extends AppCompatActivity {
     private long startTimeInMillis;
     private boolean stopwatchRunning;
     private static final long MAX_DURATION_MILLIS = TimeUnit.SECONDS.toMillis(15); // 신고까지 걸리는 시간
+
+    private boolean activityStopped = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class SoundActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopSound();
+                startSeizureEndActivity();
             }
         });
 
@@ -66,7 +68,30 @@ public class SoundActivity extends AppCompatActivity {
             mediaPlayer = null;
         }
         stopwatchRunning = false;
-        finish();
+    }
+
+    private void startSeizureEndActivity() {
+        if (!activityStopped) {
+            activityStopped = true;
+            handler.removeCallbacks(stopActivityRunnable);
+            String elapsedTime = binding.textViewStopwatch.getText().toString();
+            String eventTime = convertMillisToEventTime(eventTimeInMillis); // 수정된 부분
+            Intent intent = new Intent(SoundActivity.this, SeizureEndActivity.class);
+            intent.putExtra("elapsedTime", elapsedTime);
+            intent.putExtra("eventTime", eventTime);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    private void startCallActivity() {
+        if (!activityStopped) {
+            activityStopped = true;
+            handler.removeCallbacks(stopActivityRunnable);
+            Intent intent = new Intent(SoundActivity.this, CallActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     private Runnable updateStopwatchRunnable = new Runnable() {
@@ -85,18 +110,26 @@ public class SoundActivity extends AppCompatActivity {
         @Override
         public void run() {
             stopSound();
-            Intent intent = new Intent(SoundActivity.this, CallActivity.class);
-            startActivity(intent);
+            startCallActivity();
         }
     };
 
     private void updateStopwatchText(long elapsedTimeInMillis) {
-        long minutes = TimeUnit.MILLISECONDS.toMinutes(elapsedTimeInMillis);
-        long seconds = TimeUnit.MILLISECONDS.toSeconds(elapsedTimeInMillis) % 60;
-        long milliseconds = elapsedTimeInMillis % 1000;
+        long timeElapsedInMillis = System.currentTimeMillis() - eventTimeInMillis;
+        long minutes = TimeUnit.MILLISECONDS.toMinutes(timeElapsedInMillis);
+        long seconds = TimeUnit.MILLISECONDS.toSeconds(timeElapsedInMillis) % 60;
+        long milliseconds = timeElapsedInMillis % 1000;
 
         String timeString = String.format(Locale.US, "%02d:%02d:%03d", minutes, seconds, milliseconds);
         binding.textViewStopwatch.setText(timeString);
+
+        // eventTime 표시
+        String eventTime = convertMillisToEventTime(eventTimeInMillis); // 수정된 부분
+        binding.textViewEventTime.setText(eventTime);
+
+        // currentTime 표시
+        String currentTime = convertMillisToEventTime(System.currentTimeMillis());
+        binding.textViewCurrentTime.setText(currentTime);
     }
 
     @Override
@@ -111,7 +144,7 @@ public class SoundActivity extends AppCompatActivity {
     }
 
     private long convertEventTimeToMillis(String eventTime) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy, h:mma", Locale.US);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yy, h:mm a", Locale.US);
         try {
             Date date = dateFormat.parse(eventTime);
             return date.getTime();
@@ -119,5 +152,10 @@ public class SoundActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return 0;
+    }
+
+    private String convertMillisToEventTime(long millis) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yy, h:mm a", Locale.US);
+        return dateFormat.format(millis);
     }
 }

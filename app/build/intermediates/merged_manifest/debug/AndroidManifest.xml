@@ -50,10 +50,13 @@
             android:value="true" />
 
         <activity
+            android:name="com.samsung.android.eventsmonitor.SeizureEndActivity"
+            android:exported="false"
+            android:label="@string/title_activity_seizure_end" />
+        <activity
             android:name="com.samsung.android.eventsmonitor.CallActivity"
             android:exported="false"
-            android:label="@string/title_activity_call" >
-        </activity>
+            android:label="@string/title_activity_call" />
         <activity
             android:name="com.samsung.android.eventsmonitor.SoundActivity"
             android:exported="false"

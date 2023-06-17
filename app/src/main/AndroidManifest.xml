@@ -32,10 +32,13 @@
             android:value="true" />
 
         <activity
+            android:name=".SeizureEndActivity"
+            android:exported="false"
+            android:label="@string/title_activity_seizure_end"></activity>
+        <activity
             android:name=".CallActivity"
             android:exported="false"
-            android:label="@string/title_activity_call">
-        </activity>
+            android:label="@string/title_activity_call"></activity>
         <activity
             android:name=".SoundActivity"
             android:exported="false"
