@@ -20,28 +20,35 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textEventType"
+                android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="대발작 감지됨"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
-                android:id="@+id/textEventTime"
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="의식을 잃지 않았다면\n버튼을 눌러주세요.\n잠시 후 경보음이 울립니다."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="11sp" />
 
             <TextView
                 android:id="@+id/textTimeRamaining"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAlignment="center" />
 
             <Button
                 android:id="@+id/stopButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="멈춤" />
         </LinearLayout>
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
