@@ -3475,6 +3475,7 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_after_event 0x7f0d001c
+int layout activity_call 0x7f0d0082
 int layout activity_main 0x7f0d001d
 int layout activity_sound 0x7f0d0081
 int layout custom_dialog 0x7f0d001e
@@ -3750,6 +3751,7 @@ int string search_menu_title 0x7f1100a8
 int string status_bar_notification_info_overflow 0x7f1100a9
 int string subscribe_label 0x7f1100aa
 int string title_activity_after_event 0x7f1100ab
+int string title_activity_call 0x7f1100b0
 int string title_activity_sound 0x7f1100af
 int string unsubscribe_label 0x7f1100ac
 int string ws_action_drawer_content_description 0x7f1100ad

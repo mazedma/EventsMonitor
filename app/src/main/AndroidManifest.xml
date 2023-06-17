@@ -32,13 +32,18 @@
             android:value="true" />
 
         <activity
+            android:name=".CallActivity"
+            android:exported="false"
+            android:label="@string/title_activity_call">
+        </activity>
+        <activity
             android:name=".SoundActivity"
             android:exported="false"
-            android:label="@string/title_activity_sound"></activity>
+            android:label="@string/title_activity_sound" />
         <activity
             android:name=".AfterEventActivity"
             android:exported="true"
-            android:label="@string/title_activity_after_event"></activity>
+            android:label="@string/title_activity_after_event" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

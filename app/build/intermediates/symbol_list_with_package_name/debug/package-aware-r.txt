@@ -3476,6 +3476,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_after_event
+layout activity_call
 layout activity_main
 layout activity_sound
 layout custom_dialog
@@ -3751,6 +3752,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string subscribe_label
 string title_activity_after_event
+string title_activity_call
 string title_activity_sound
 string unsubscribe_label
 string ws_action_drawer_content_description
