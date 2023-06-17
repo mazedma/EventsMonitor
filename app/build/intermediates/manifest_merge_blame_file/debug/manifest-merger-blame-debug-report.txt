@@ -6,139 +6,143 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="30"
-8-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml
+8-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml
+9-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.WAKE_LOCK" />
-11-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:5:5-68
-11-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:5:22-65
+11-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:5:5-68
+11-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:5:22-65
 12
-13    <uses-feature android:name="android.hardware.type.watch" />
-13-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:7:5-64
-13-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:7:19-61
-14
-15    <!-- Needed in order to re-register for data on device startup. -->
-16    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-16-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:10:5-79
-16-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:10:22-76
-17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-17-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:11:5-81
-17-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:11:22-78
-18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-18-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:12:5-77
-18-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:12:22-74
-19
-20    <queries>
-20-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:14:5-16:15
-21        <package android:name="com.google.android.wearable.healthservices" />
-21-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:15:9-78
-21-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:15:18-75
-22    </queries>
+13    <uses-feature android:name="android.hardware.type.watch" /> <!-- Needed in order to re-register for data on device startup. -->
+13-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:7:5-64
+13-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:7:19-61
+14    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+14-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:9:5-81
+15-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:10:5-77
+16-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:10:22-74
+17
+18    <queries>
+18-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:12:5-14:15
+19        <package android:name="com.google.android.wearable.healthservices" />
+19-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:13:9-78
+19-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:13:18-75
+20    </queries>
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
+22-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
 23
-24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
-24-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
-25
-26    <permission
-26-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-27        android:name="com.samsung.android.eventsmonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+24    <permission
+24-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+25        android:name="com.samsung.android.eventsmonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.samsung.android.eventsmonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 29
-30    <uses-permission android:name="com.samsung.android.eventsmonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-30-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-31
-32    <application
-32-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:18:5-73:19
-33        android:allowBackup="true"
-33-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:19:9-35
-34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-34-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-35        android:debuggable="true"
-36        android:extractNativeLibs="false"
-37        android:icon="@drawable/ic_launcher"
-37-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:20:9-45
-38        android:label="@string/app_name"
-38-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:21:9-41
-39        android:supportsRtl="true"
-39-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:22:9-35
-40        android:testOnly="true"
-41        android:theme="@style/Theme.MaterialComponents.NoActionBar" >
-41-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:23:9-68
-42        <uses-library
-42-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:24:9-26:39
-43            android:name="com.google.android.wearable"
-43-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:25:13-55
-44            android:required="true" />
-44-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:26:13-36
-45
-46        <!--
-47               Set to true if your app is Standalone, that is, it does not require the handheld
-48               app to run.
-49        -->
-50        <meta-data
-50-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:32:9-34:36
-51            android:name="com.google.android.wearable.standalone"
-51-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:33:13-66
-52            android:value="true" />
-52-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:34:13-33
-53
-54        <activity
-54-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:36:9-43:20
-55            android:name="com.samsung.android.eventsmonitor.MainActivity"
-55-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:37:13-41
-56            android:exported="true" >
-56-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:38:13-36
-57            <intent-filter>
-57-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:39:13-42:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:40:17-69
-58-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:40:25-66
-59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:41:17-77
-60-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:41:27-74
-61            </intent-filter>
-62        </activity>
-63
-64        <service
-64-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:45:9-48:111
-65            android:name="com.samsung.android.eventsmonitor.PassiveHealthEventService"
-65-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:46:13-54
-66            android:exported="true"
-66-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:47:13-36
-67            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" />
-67-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:48:13-108
-68
-69        <!-- Receiver that re-registers for background data after a device restart. -->
-70        <receiver
-70-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:51:9-57:20
-71            android:name="com.samsung.android.eventsmonitor.StartupReceiver"
-71-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:52:13-44
-72            android:exported="true" >
-72-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:53:13-36
-73            <intent-filter>
-73-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:54:13-56:29
-74                <action android:name="android.intent.action.BOOT_COMPLETED" />
-74-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:55:17-79
-74-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:55:25-76
-75            </intent-filter>
-76        </receiver>
-77
+30    <application
+30-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:16:5-76:19
+31        android:allowBackup="true"
+31-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:17:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@drawable/ic_launcher"
+35-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:18:9-45
+36        android:label="@string/app_name"
+36-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:19:9-41
+37        android:supportsRtl="true"
+37-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:20:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.MaterialComponents.NoActionBar" >
+39-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:21:9-68
+40        <uses-library
+40-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:22:9-24:39
+41            android:name="com.google.android.wearable"
+41-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:23:13-55
+42            android:required="true" />
+42-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:24:13-36
+43
+44        <!--
+45               Set to true if your app is Standalone, that is, it does not require the handheld
+46               app to run.
+47        -->
+48        <meta-data
+48-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:30:9-32:36
+49            android:name="com.google.android.wearable.standalone"
+49-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:31:13-66
+50            android:value="true" />
+50-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:32:13-33
+51
+52        <activity
+52-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:34:9-38:20
+53            android:name="com.samsung.android.eventsmonitor.AfterEventActivity"
+53-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:35:13-47
+54            android:exported="true"
+54-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:36:13-36
+55            android:label="@string/title_activity_after_event" >
+55-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:37:13-63
+56        </activity>
+57        <activity
+57-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:39:9-47:20
+58            android:name="com.samsung.android.eventsmonitor.MainActivity"
+58-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:40:13-41
+59            android:exported="true" >
+59-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:41:13-36
+60            <intent-filter>
+60-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:42:13-46:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:43:17-69
+61-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:43:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:45:17-77
+63-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:45:27-74
+64            </intent-filter>
+65        </activity>
+66
+67        <service
+67-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:49:9-52:111
+68            android:name="com.samsung.android.eventsmonitor.PassiveHealthEventService"
+68-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:50:13-54
+69            android:exported="true"
+69-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:51:13-36
+70            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" /> <!-- Receiver that re-registers for background data after a device restart. -->
+70-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:52:13-108
+71        <receiver
+71-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:53:9-59:20
+72            android:name="com.samsung.android.eventsmonitor.StartupReceiver"
+72-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:54:13-44
+73            android:exported="true" >
+73-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:55:13-36
+74            <intent-filter>
+74-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:56:13-58:29
+75                <action android:name="android.intent.action.BOOT_COMPLETED" />
+75-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:57:17-79
+75-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:57:25-76
+76            </intent-filter>
+77        </receiver>
 78        <!--
-79             Our application implements Configuration.Provider, so we don't need this to initialize
+79 Our application implements Configuration.Provider, so we don't need this to initialize
 80             WorkManager.
 81        -->
 82        <provider
 83            android:name="androidx.startup.InitializationProvider"
-83-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:63:13-67
+83-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:65:13-67
 84            android:authorities="com.samsung.android.eventsmonitor.androidx-startup"
-84-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:64:13-68
+84-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:66:13-68
 85            android:exported="false" >
-85-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:65:13-37
+85-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:67:13-37
 86            <meta-data
 86-->[androidx.emoji2:emoji2:1.2.0] /Users/a1/.gradle/caches/transforms-3/2dfa71af9bee3680306de911b0d6d834/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 87                android:name="androidx.emoji2.text.EmojiCompatInitializer"
@@ -317,8 +321,8 @@
 177            <intent-filter>
 177-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
 178                <action android:name="android.intent.action.BOOT_COMPLETED" />
-178-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:55:17-79
-178-->/Users/a1/android_workplace/EventsMonitor/app/src/main/AndroidManifest.xml:55:25-76
+178-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:57:17-79
+178-->/Users/a1/android_workplace/EventsMonitorCustom/app/src/main/AndroidManifest.xml:57:25-76
 179                <action android:name="android.intent.action.TIME_SET" />
 179-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
 179-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70

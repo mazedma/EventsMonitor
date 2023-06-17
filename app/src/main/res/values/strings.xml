@@ -8,4 +8,10 @@
     <string name="empty_label" description="Empty value"> </string>
     <string name="not_all_permissions_granted" description="Some of permissions not granted">Not all permissions granted.</string>
     <string name="not_all_health_events_available" description="Some health events not available">Some health events not available.</string>
+    <string name="title_activity_after_event">AfterEventActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>

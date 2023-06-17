@@ -4,9 +4,7 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-    <uses-feature android:name="android.hardware.type.watch" />
-
-    <!-- Needed in order to re-register for data on device startup. -->
+    <uses-feature android:name="android.hardware.type.watch" /> <!-- Needed in order to re-register for data on device startup. -->
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -34,10 +32,16 @@
             android:value="true" />
 
         <activity
+            android:name=".AfterEventActivity"
+            android:exported="true"
+            android:label="@string/title_activity_after_event">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -45,9 +49,7 @@
         <service
             android:name=".PassiveHealthEventService"
             android:exported="true"
-            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" />
-
-        <!-- Receiver that re-registers for background data after a device restart. -->
+            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" /> <!-- Receiver that re-registers for background data after a device restart. -->
         <receiver
             android:name=".StartupReceiver"
             android:exported="true">
@@ -55,8 +57,8 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
-        <!-- Our application implements Configuration.Provider, so we don't need this to initialize
+        <!--
+ Our application implements Configuration.Provider, so we don't need this to initialize
              WorkManager.
         -->
         <provider
@@ -64,6 +66,7 @@
             android:authorities="${applicationId}.androidx-startup"
             android:exported="false"
             tools:node="merge">
+
             <!-- If you are using androidx.startup to initialize other components -->
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"

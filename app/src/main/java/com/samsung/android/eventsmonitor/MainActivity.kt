@@ -18,6 +18,7 @@ package com.samsung.android.eventsmonitor
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.AudioManager
 import android.media.MediaPlayer
@@ -77,10 +78,12 @@ class MainActivity : AppCompatActivity() {
             runOnUiThread {
                 binding.textEventTypeValue.text = eventData.eventType
                 binding.textEventTimeValue.text = eventData.eventTime
+
+                val intent = Intent(this@MainActivity, AfterEventActivity::class.java)
+                intent.putExtra("eventType", eventData.eventType)
+                intent.putExtra("eventTime", eventData.eventTime)
+                startActivity(intent)
             }
-            // 음원 재생
-            mediaPlayer = MediaPlayer.create(this@MainActivity, R.raw.alert_sound)
-            mediaPlayer?.start()
 
         }
     }
