@@ -24,17 +24,17 @@ public final class ActivitySoundBinding implements ViewBinding {
   public final Button stopSoundButton;
 
   @NonNull
-  public final TextView textPlayCount;
-
-  @NonNull
   public final TextView textView;
 
+  @NonNull
+  public final TextView textViewStopwatch;
+
   private ActivitySoundBinding(@NonNull BoxInsetLayout rootView, @NonNull Button stopSoundButton,
-      @NonNull TextView textPlayCount, @NonNull TextView textView) {
+      @NonNull TextView textView, @NonNull TextView textViewStopwatch) {
     this.rootView = rootView;
     this.stopSoundButton = stopSoundButton;
-    this.textPlayCount = textPlayCount;
     this.textView = textView;
+    this.textViewStopwatch = textViewStopwatch;
   }
 
   @Override
@@ -70,20 +70,20 @@ public final class ActivitySoundBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textPlayCount;
-      TextView textPlayCount = ViewBindings.findChildViewById(rootView, id);
-      if (textPlayCount == null) {
-        break missingId;
-      }
-
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
         break missingId;
       }
 
-      return new ActivitySoundBinding((BoxInsetLayout) rootView, stopSoundButton, textPlayCount,
-          textView);
+      id = R.id.textViewStopwatch;
+      TextView textViewStopwatch = ViewBindings.findChildViewById(rootView, id);
+      if (textViewStopwatch == null) {
+        break missingId;
+      }
+
+      return new ActivitySoundBinding((BoxInsetLayout) rootView, stopSoundButton, textView,
+          textViewStopwatch);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

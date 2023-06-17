@@ -2,7 +2,6 @@ package com.samsung.android.eventsmonitor;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -14,6 +13,7 @@ public class AfterEventActivity extends Activity {
     private ActivityAfterEventBinding binding;
     private CountDownTimer countDownTimer;
     private boolean stopButtonClicked = false;
+    private String eventTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class AfterEventActivity extends Activity {
 
         Intent intent = getIntent();
         String eventType = intent.getStringExtra("eventType");
-        String eventTime = intent.getStringExtra("eventTime");
+        eventTime = intent.getStringExtra("eventTime");
 
         // UI 업데이트
         binding.textEventType.setText(eventType);
@@ -77,6 +77,7 @@ public class AfterEventActivity extends Activity {
     private void startNextScreen() {
         // 다음 화면으로 전환
         Intent intent = new Intent(AfterEventActivity.this, SoundActivity.class);
+        intent.putExtra("eventTime", eventTime);
         startActivity(intent);
         finish();
     }

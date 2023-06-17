@@ -15,9 +15,9 @@ id textEventTimeValue
 id textEventType
 id textEventTypeDesc
 id textEventTypeValue
-id textPlayCount
 id textTimeRamaining
 id textView
+id textViewStopwatch
 layout activity_after_event
 layout activity_main
 layout activity_sound
