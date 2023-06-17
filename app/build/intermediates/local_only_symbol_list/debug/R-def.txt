@@ -8,14 +8,16 @@ drawable ic_launcher
 id app_name
 id btnSubscribe
 id stopButton
-id text
+id stopSoundButton
 id textEventTime
 id textEventTimeDesc
 id textEventTimeValue
 id textEventType
 id textEventTypeDesc
 id textEventTypeValue
+id textPlayCount
 id textTimeRamaining
+id textView
 layout activity_after_event
 layout activity_main
 layout activity_sound

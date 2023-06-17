@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".AfterEventActivity"
+    tools:context=".SoundActivity"
     tools:deviceIds="wear">
 
     <FrameLayout
@@ -20,28 +20,23 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textEventType"
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="대발작 감지됨" />
 
             <TextView
-                android:id="@+id/textEventTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textTimeRamaining"
+                android:id="@+id/textPlayCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <Button
-                android:id="@+id/stopButton"
+                android:id="@+id/stopSoundButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
+
         </LinearLayout>
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>

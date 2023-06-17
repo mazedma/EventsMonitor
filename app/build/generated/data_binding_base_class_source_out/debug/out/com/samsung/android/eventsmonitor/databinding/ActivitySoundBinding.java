@@ -4,6 +4,7 @@ package com.samsung.android.eventsmonitor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,11 +21,20 @@ public final class ActivitySoundBinding implements ViewBinding {
   private final BoxInsetLayout rootView;
 
   @NonNull
-  public final TextView text;
+  public final Button stopSoundButton;
 
-  private ActivitySoundBinding(@NonNull BoxInsetLayout rootView, @NonNull TextView text) {
+  @NonNull
+  public final TextView textPlayCount;
+
+  @NonNull
+  public final TextView textView;
+
+  private ActivitySoundBinding(@NonNull BoxInsetLayout rootView, @NonNull Button stopSoundButton,
+      @NonNull TextView textPlayCount, @NonNull TextView textView) {
     this.rootView = rootView;
-    this.text = text;
+    this.stopSoundButton = stopSoundButton;
+    this.textPlayCount = textPlayCount;
+    this.textView = textView;
   }
 
   @Override
@@ -54,13 +64,26 @@ public final class ActivitySoundBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text;
-      TextView text = ViewBindings.findChildViewById(rootView, id);
-      if (text == null) {
+      id = R.id.stopSoundButton;
+      Button stopSoundButton = ViewBindings.findChildViewById(rootView, id);
+      if (stopSoundButton == null) {
         break missingId;
       }
 
-      return new ActivitySoundBinding((BoxInsetLayout) rootView, text);
+      id = R.id.textPlayCount;
+      TextView textPlayCount = ViewBindings.findChildViewById(rootView, id);
+      if (textPlayCount == null) {
+        break missingId;
+      }
+
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      return new ActivitySoundBinding((BoxInsetLayout) rootView, stopSoundButton, textPlayCount,
+          textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

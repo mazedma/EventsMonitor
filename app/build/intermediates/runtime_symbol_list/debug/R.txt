@@ -3244,6 +3244,7 @@ int id staticPostLayout 0x7f0a01a4
 int id status_bar_latest_event_content 0x7f0a01a5
 int id stop 0x7f0a01a6
 int id stopButton 0x7f0a020f
+int id stopSoundButton 0x7f0a0211
 int id stretch 0x7f0a01a7
 int id submenuarrow 0x7f0a01a8
 int id submit_area 0x7f0a01a9
@@ -3271,11 +3272,13 @@ int id textEventTimeValue 0x7f0a01be
 int id textEventType 0x7f0a01bf
 int id textEventTypeDesc 0x7f0a01c0
 int id textEventTypeValue 0x7f0a01c1
+int id textPlayCount 0x7f0a0212
 int id textSpacerNoButtons 0x7f0a01c2
 int id textSpacerNoTitle 0x7f0a01c3
 int id textStart 0x7f0a01c4
 int id textTimeRamaining 0x7f0a0210
 int id textTop 0x7f0a01c5
+int id textView 0x7f0a0213
 int id text_input_end_icon 0x7f0a01c6
 int id text_input_error_icon 0x7f0a01c7
 int id text_input_start_icon 0x7f0a01c8
