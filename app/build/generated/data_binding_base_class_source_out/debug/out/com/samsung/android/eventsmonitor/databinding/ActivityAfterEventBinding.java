@@ -24,22 +24,22 @@ public final class ActivityAfterEventBinding implements ViewBinding {
   public final Button stopButton;
 
   @NonNull
-  public final TextView textEventTime;
-
-  @NonNull
-  public final TextView textEventType;
-
-  @NonNull
   public final TextView textTimeRamaining;
 
+  @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final TextView textView3;
+
   private ActivityAfterEventBinding(@NonNull BoxInsetLayout rootView, @NonNull Button stopButton,
-      @NonNull TextView textEventTime, @NonNull TextView textEventType,
-      @NonNull TextView textTimeRamaining) {
+      @NonNull TextView textTimeRamaining, @NonNull TextView textView2,
+      @NonNull TextView textView3) {
     this.rootView = rootView;
     this.stopButton = stopButton;
-    this.textEventTime = textEventTime;
-    this.textEventType = textEventType;
     this.textTimeRamaining = textTimeRamaining;
+    this.textView2 = textView2;
+    this.textView3 = textView3;
   }
 
   @Override
@@ -75,26 +75,26 @@ public final class ActivityAfterEventBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textEventTime;
-      TextView textEventTime = ViewBindings.findChildViewById(rootView, id);
-      if (textEventTime == null) {
-        break missingId;
-      }
-
-      id = R.id.textEventType;
-      TextView textEventType = ViewBindings.findChildViewById(rootView, id);
-      if (textEventType == null) {
-        break missingId;
-      }
-
       id = R.id.textTimeRamaining;
       TextView textTimeRamaining = ViewBindings.findChildViewById(rootView, id);
       if (textTimeRamaining == null) {
         break missingId;
       }
 
-      return new ActivityAfterEventBinding((BoxInsetLayout) rootView, stopButton, textEventTime,
-          textEventType, textTimeRamaining);
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      return new ActivityAfterEventBinding((BoxInsetLayout) rootView, stopButton, textTimeRamaining,
+          textView2, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

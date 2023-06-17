@@ -23,31 +23,23 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="대발작 감지됨" />
+                android:text="대발작 감지됨"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/textViewStopwatch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <Button
                 android:id="@+id/stopSoundButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <TextView
-                android:id="@+id/textViewEventTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textViewCurrentTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="멈춤" />
 
         </LinearLayout>
     </FrameLayout>

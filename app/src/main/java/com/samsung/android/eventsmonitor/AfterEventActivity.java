@@ -26,9 +26,6 @@ public class AfterEventActivity extends Activity {
         String eventType = intent.getStringExtra("eventType");
         eventTime = intent.getStringExtra("eventTime");
 
-        // UI 업데이트
-        binding.textEventType.setText(eventType);
-        binding.textEventTime.setText(eventTime);
 
         binding.stopButton.setOnClickListener(new View.OnClickListener() {
             @Override

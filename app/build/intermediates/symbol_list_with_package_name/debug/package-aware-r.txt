@@ -3267,10 +3267,8 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
-id textEventTime
 id textEventTimeDesc
 id textEventTimeValue
-id textEventType
 id textEventTypeDesc
 id textEventTypeValue
 id textSpacerNoButtons
@@ -3279,8 +3277,8 @@ id textStart
 id textTimeRamaining
 id textTop
 id textView
-id textViewCurrentTime
-id textViewEventTime
+id textView2
+id textView3
 id textViewStopwatch
 id text_input_end_icon
 id text_input_error_icon

@@ -3266,10 +3266,8 @@ int id tag_window_insets_animation_callback 0x7f0a01b8
 int id text 0x7f0a01b9
 int id text2 0x7f0a01ba
 int id textEnd 0x7f0a01bb
-int id textEventTime 0x7f0a01bc
 int id textEventTimeDesc 0x7f0a01bd
 int id textEventTimeValue 0x7f0a01be
-int id textEventType 0x7f0a01bf
 int id textEventTypeDesc 0x7f0a01c0
 int id textEventTypeValue 0x7f0a01c1
 int id textSpacerNoButtons 0x7f0a01c2
@@ -3278,8 +3276,8 @@ int id textStart 0x7f0a01c4
 int id textTimeRamaining 0x7f0a0210
 int id textTop 0x7f0a01c5
 int id textView 0x7f0a0213
-int id textViewCurrentTime 0x7f0a0218
-int id textViewEventTime 0x7f0a0219
+int id textView2 0x7f0a021a
+int id textView3 0x7f0a021b
 int id textViewStopwatch 0x7f0a0217
 int id text_input_end_icon 0x7f0a01c6
 int id text_input_error_icon 0x7f0a01c7

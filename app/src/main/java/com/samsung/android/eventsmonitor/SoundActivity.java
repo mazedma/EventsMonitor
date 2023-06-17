@@ -124,12 +124,10 @@ public class SoundActivity extends AppCompatActivity {
         binding.textViewStopwatch.setText(timeString);
 
         // eventTime 표시
-        String eventTime = convertMillisToEventTime(eventTimeInMillis); // 수정된 부분
-        binding.textViewEventTime.setText(eventTime);
+        String eventTime = convertMillisToEventTime(eventTimeInMillis);
 
         // currentTime 표시
         String currentTime = convertMillisToEventTime(System.currentTimeMillis());
-        binding.textViewCurrentTime.setText(currentTime);
     }
 
     @Override
