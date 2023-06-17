@@ -75,7 +75,7 @@ public class SoundActivity extends AppCompatActivity {
             activityStopped = true;
             handler.removeCallbacks(stopActivityRunnable);
             String elapsedTime = binding.textViewStopwatch.getText().toString();
-            String eventTime = convertMillisToEventTime(eventTimeInMillis); // 수정된 부분
+            String eventTime = convertMillisToEventTime(eventTimeInMillis);
             Intent intent = new Intent(SoundActivity.this, SeizureEndActivity.class);
             intent.putExtra("elapsedTime", elapsedTime);
             intent.putExtra("eventTime", eventTime);
@@ -88,7 +88,9 @@ public class SoundActivity extends AppCompatActivity {
         if (!activityStopped) {
             activityStopped = true;
             handler.removeCallbacks(stopActivityRunnable);
+            String eventTime = convertMillisToEventTime(eventTimeInMillis);
             Intent intent = new Intent(SoundActivity.this, CallActivity.class);
+            intent.putExtra("eventTime", eventTime);
             startActivity(intent);
             finish();
         }

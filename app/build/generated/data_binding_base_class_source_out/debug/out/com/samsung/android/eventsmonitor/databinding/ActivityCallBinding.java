@@ -20,11 +20,12 @@ public final class ActivityCallBinding implements ViewBinding {
   private final BoxInsetLayout rootView;
 
   @NonNull
-  public final TextView text;
+  public final TextView textViewElapsedTime;
 
-  private ActivityCallBinding(@NonNull BoxInsetLayout rootView, @NonNull TextView text) {
+  private ActivityCallBinding(@NonNull BoxInsetLayout rootView,
+      @NonNull TextView textViewElapsedTime) {
     this.rootView = rootView;
-    this.text = text;
+    this.textViewElapsedTime = textViewElapsedTime;
   }
 
   @Override
@@ -54,13 +55,13 @@ public final class ActivityCallBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text;
-      TextView text = ViewBindings.findChildViewById(rootView, id);
-      if (text == null) {
+      id = R.id.textViewElapsedTime;
+      TextView textViewElapsedTime = ViewBindings.findChildViewById(rootView, id);
+      if (textViewElapsedTime == null) {
         break missingId;
       }
 
-      return new ActivityCallBinding((BoxInsetLayout) rootView, text);
+      return new ActivityCallBinding((BoxInsetLayout) rootView, textViewElapsedTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

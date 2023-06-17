@@ -9,7 +9,6 @@ id app_name
 id btnSubscribe
 id stopButton
 id stopSoundButton
-id text
 id textElapsedTime
 id textEventTime
 id textEventTimeDesc
@@ -23,6 +22,7 @@ id textView3
 id textView5
 id textView7
 id textView9
+id textViewElapsedTime
 id textViewStopwatch
 layout activity_after_event
 layout activity_call

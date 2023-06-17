@@ -3283,6 +3283,7 @@ int id textView3 0x7f0a021b
 int id textView5 0x7f0a021c
 int id textView7 0x7f0a021d
 int id textView9 0x7f0a021e
+int id textViewElapsedTime 0x7f0a021f
 int id textViewStopwatch 0x7f0a0217
 int id text_input_end_icon 0x7f0a01c6
 int id text_input_error_icon 0x7f0a01c7
