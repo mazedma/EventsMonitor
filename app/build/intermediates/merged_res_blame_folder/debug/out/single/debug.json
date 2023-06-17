@@ -36,6 +36,10 @@
         "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-main-41:/layout/activity_main.xml"
     },
     {
+        "merged": "com.samsung.android.eventsmonitor.app-merged_res-39:/layout_activity_seizure_end.xml.flat",
+        "source": "com.samsung.android.eventsmonitor.app-main-41:/layout/activity_seizure_end.xml"
+    },
+    {
         "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-merged_res-39:/drawable_button_background.xml.flat",
         "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.app-main-41:/drawable/button_background.xml"
     }

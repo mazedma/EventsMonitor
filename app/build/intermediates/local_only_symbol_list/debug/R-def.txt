@@ -10,6 +10,8 @@ id btnSubscribe
 id stopButton
 id stopSoundButton
 id text
+id textElapsedTime
+id textEventTime
 id textEventTimeDesc
 id textEventTimeValue
 id textEventTypeDesc
@@ -18,6 +20,9 @@ id textTimeRamaining
 id textView
 id textView2
 id textView3
+id textView5
+id textView7
+id textView9
 id textViewStopwatch
 layout activity_after_event
 layout activity_call

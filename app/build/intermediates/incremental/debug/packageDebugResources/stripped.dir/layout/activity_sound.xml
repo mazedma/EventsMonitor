@@ -25,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:text="대발작 감지됨"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textViewStopwatch"
