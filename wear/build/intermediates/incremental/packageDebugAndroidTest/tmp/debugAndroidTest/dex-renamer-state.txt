@@ -1,7 +1,7 @@
-#Thu Jun 08 16:24:24 KST 2023
-base.1=/Users/a1/android_workplace/EventsMonitor/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/14/classes.dex
+#Mon Jun 19 23:01:03 KST 2023
+base.1=/Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/14/classes.dex
 path.1=14/classes.dex
-base.0=/Users/a1/android_workplace/EventsMonitor/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.0=/Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=0/classes.dex

@@ -43,7 +43,9 @@
         <activity
             android:name=".SeizureEndActivity"
             android:exported="false"
-            android:label="@string/title_activity_seizure_end" />
+            android:label="@string/title_activity_seizure_end" >
+
+        </activity>
         <activity
             android:name=".CallActivity"
             android:exported="false"
@@ -54,7 +56,7 @@
             android:label="@string/title_activity_sound" />
         <activity
             android:name=".AfterEventActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_after_event" />
         <activity
             android:name=".MainActivity"

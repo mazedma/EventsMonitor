@@ -13,7 +13,7 @@
       "attributes": [],
       "versionCode": 0,
       "versionName": "",
-      "outputFile": "app-debug-androidTest.apk"
+      "outputFile": "wear-debug-androidTest.apk"
     }
   ],
   "elementType": "File"

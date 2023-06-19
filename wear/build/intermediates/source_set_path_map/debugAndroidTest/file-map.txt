@@ -1,5 +1,5 @@
-com.samsung.android.eventsmonitor.test.app-androidTest-0 /Users/a1/android_workplace/EventsMonitor/app/build/generated/res/resValues/androidTest/debug
-com.samsung.android.eventsmonitor.test.app-androidTest-1 /Users/a1/android_workplace/EventsMonitor/app/build/generated/res/rs/androidTest/debug
-com.samsung.android.eventsmonitor.test.app-mergeDebugAndroidTestResources-2 /Users/a1/android_workplace/EventsMonitor/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.samsung.android.eventsmonitor.test.app-mergeDebugAndroidTestResources-3 /Users/a1/android_workplace/EventsMonitor/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.samsung.android.eventsmonitor.test.app-merged_res-4 /Users/a1/android_workplace/EventsMonitor/app/build/intermediates/merged_res/debugAndroidTest
+com.samsung.android.eventsmonitor.test.wear-androidTest-0 /Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/generated/res/resValues/androidTest/debug
+com.samsung.android.eventsmonitor.test.wear-androidTest-1 /Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/generated/res/rs/androidTest/debug
+com.samsung.android.eventsmonitor.test.wear-mergeDebugAndroidTestResources-2 /Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.samsung.android.eventsmonitor.test.wear-mergeDebugAndroidTestResources-3 /Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.samsung.android.eventsmonitor.test.wear-merged_res-4 /Users/a1/android_workplace/EventsMonitorWithPhone/wear/build/intermediates/merged_res/debugAndroidTest

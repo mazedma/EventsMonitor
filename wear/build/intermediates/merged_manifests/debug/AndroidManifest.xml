@@ -35,7 +35,6 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.MaterialComponents.NoActionBar" >
         <service
             android:name="com.samsung.android.eventsmonitor.MessageService"
@@ -64,8 +63,14 @@
 
         <activity
             android:name="com.samsung.android.eventsmonitor.SeizureEndActivity"
-            android:exported="false"
-            android:label="@string/title_activity_seizure_end" />
+            android:exported="true"
+            android:label="@string/title_activity_seizure_end" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.samsung.android.eventsmonitor.CallActivity"
             android:exported="false"
@@ -76,16 +81,18 @@
             android:label="@string/title_activity_sound" />
         <activity
             android:name="com.samsung.android.eventsmonitor.AfterEventActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_after_event" />
         <activity
             android:name="com.samsung.android.eventsmonitor.MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
 
         <service
