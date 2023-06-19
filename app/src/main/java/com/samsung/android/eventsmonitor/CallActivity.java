@@ -1,6 +1,5 @@
 package com.samsung.android.eventsmonitor;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,7 +13,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 public class CallActivity extends AppCompatActivity {
 
@@ -31,7 +29,6 @@ public class CallActivity extends AppCompatActivity {
 
         // SoundActivity로부터 전달받은 데이터 가져오기
         String eventTime = getIntent().getStringExtra("eventTime");
-        String elapsedTime = getIntent().getStringExtra("elapsedTime");
         eventTimeInMillis = convertEventTimeToMillis(eventTime);
 
         handler = new Handler();
@@ -50,8 +47,13 @@ public class CallActivity extends AppCompatActivity {
 
         handler.post(updateElapsedTimeRunnable);
 
-        // 다른 작업 수행
-        // ...
+        // stop 버튼에 클릭 리스너 설정
+        binding.stopButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStopButtonClick(v);
+            }
+        });
     }
 
     private void updateElapsedTime() {
@@ -59,8 +61,8 @@ public class CallActivity extends AppCompatActivity {
         long elapsedTimeInMillis = System.currentTimeMillis() - eventTimeInMillis;
 
         // 경과 시간을 분, 초, 밀리초로 변환합니다.
-        long minutes = TimeUnit.MILLISECONDS.toMinutes(elapsedTimeInMillis);
-        long seconds = TimeUnit.MILLISECONDS.toSeconds(elapsedTimeInMillis) % 60;
+        long minutes = elapsedTimeInMillis / (60 * 1000);
+        long seconds = (elapsedTimeInMillis / 1000) % 60;
         long milliseconds = elapsedTimeInMillis % 1000;
 
         // 경과 시간을 문자열로 포맷합니다.
@@ -86,5 +88,24 @@ public class CallActivity extends AppCompatActivity {
         super.onDestroy();
         // 핸들러의 업데이트 Runnable을 제거합니다.
         handler.removeCallbacks(updateElapsedTimeRunnable);
+    }
+
+    private void startSeizureEndActivity(String elapsedTime, String eventTime) {
+        Intent intent = new Intent(CallActivity.this, SeizureEndActivity.class);
+        intent.putExtra("elapsedTime", elapsedTime);
+        intent.putExtra("eventTime", eventTime);
+        startActivity(intent);
+    }
+
+    // stop 버튼 클릭 시 호출되는 메서드
+    public void onStopButtonClick(View view) {
+        String elapsedTime = binding.textViewElapsedTime.getText().toString();
+        String eventTime = convertMillisToEventTime(eventTimeInMillis);
+        startSeizureEndActivity(elapsedTime, eventTime);
+    }
+
+    private String convertMillisToEventTime(long millis) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yy, h:mm a", Locale.US);
+        return dateFormat.format(millis);
     }
 }

@@ -20,11 +20,25 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="119 자동 신고됨"
+                android:textAlignment="center" />
+
+            <TextView
                 android:id="@+id/textViewElapsedTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/stopButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="멈춤" />
         </LinearLayout>
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>

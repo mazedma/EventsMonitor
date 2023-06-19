@@ -3244,6 +3244,7 @@ int id staticPostLayout 0x7f0a01a4
 int id status_bar_latest_event_content 0x7f0a01a5
 int id stop 0x7f0a01a6
 int id stopButton 0x7f0a020f
+int id stopButton2 0x7f0a0220
 int id stopSoundButton 0x7f0a0211
 int id stretch 0x7f0a01a7
 int id submenuarrow 0x7f0a01a8
@@ -3281,6 +3282,7 @@ int id textView 0x7f0a0213
 int id textView2 0x7f0a021a
 int id textView3 0x7f0a021b
 int id textView5 0x7f0a021c
+int id textView6 0x7f0a0221
 int id textView7 0x7f0a021d
 int id textView9 0x7f0a021e
 int id textViewElapsedTime 0x7f0a021f

@@ -3245,6 +3245,7 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stopButton
+id stopButton2
 id stopSoundButton
 id stretch
 id submenuarrow
@@ -3282,6 +3283,7 @@ id textView
 id textView2
 id textView3
 id textView5
+id textView6
 id textView7
 id textView9
 id textViewElapsedTime

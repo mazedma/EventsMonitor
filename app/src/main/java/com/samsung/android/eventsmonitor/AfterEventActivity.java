@@ -75,6 +75,7 @@ public class AfterEventActivity extends Activity {
         // 다음 화면으로 전환
         Intent intent = new Intent(AfterEventActivity.this, SoundActivity.class);
         intent.putExtra("eventTime", eventTime);
+        intent.putExtra("elapsedTime", eventTime);
         startActivity(intent);
         finish();
     }

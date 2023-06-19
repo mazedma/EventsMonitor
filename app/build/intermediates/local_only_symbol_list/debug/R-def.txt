@@ -8,6 +8,7 @@ drawable ic_launcher
 id app_name
 id btnSubscribe
 id stopButton
+id stopButton2
 id stopSoundButton
 id textElapsedTime
 id textEventTime
@@ -20,6 +21,7 @@ id textView
 id textView2
 id textView3
 id textView5
+id textView6
 id textView7
 id textView9
 id textViewElapsedTime

@@ -4,6 +4,7 @@ package com.samsung.android.eventsmonitor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,11 +21,19 @@ public final class ActivityCallBinding implements ViewBinding {
   private final BoxInsetLayout rootView;
 
   @NonNull
+  public final Button stopButton2;
+
+  @NonNull
+  public final TextView textView6;
+
+  @NonNull
   public final TextView textViewElapsedTime;
 
-  private ActivityCallBinding(@NonNull BoxInsetLayout rootView,
-      @NonNull TextView textViewElapsedTime) {
+  private ActivityCallBinding(@NonNull BoxInsetLayout rootView, @NonNull Button stopButton2,
+      @NonNull TextView textView6, @NonNull TextView textViewElapsedTime) {
     this.rootView = rootView;
+    this.stopButton2 = stopButton2;
+    this.textView6 = textView6;
     this.textViewElapsedTime = textViewElapsedTime;
   }
 
@@ -55,13 +64,26 @@ public final class ActivityCallBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.stopButton2;
+      Button stopButton2 = ViewBindings.findChildViewById(rootView, id);
+      if (stopButton2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
       id = R.id.textViewElapsedTime;
       TextView textViewElapsedTime = ViewBindings.findChildViewById(rootView, id);
       if (textViewElapsedTime == null) {
         break missingId;
       }
 
-      return new ActivityCallBinding((BoxInsetLayout) rootView, textViewElapsedTime);
+      return new ActivityCallBinding((BoxInsetLayout) rootView, stopButton2, textView6,
+          textViewElapsedTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
