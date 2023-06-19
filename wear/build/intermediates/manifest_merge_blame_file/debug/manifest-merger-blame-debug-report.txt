@@ -1,0 +1,428 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.samsung.android.eventsmonitor"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+8-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:5:5-68
+11-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:5:22-65
+12
+13    <uses-feature android:name="android.hardware.type.watch" /> <!-- Needed in order to re-register for data on device startup. -->
+13-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:7:5-64
+13-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:7:19-61
+14    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+14-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:9:5-81
+15-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:10:5-77
+16-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:10:22-74
+17
+18    <queries>
+18-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:12:5-14:15
+19        <package android:name="com.google.android.wearable.healthservices" />
+19-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:13:9-78
+19-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:13:18-75
+20    </queries>
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
+22-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
+23
+24    <permission
+24-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+25        android:name="com.samsung.android.eventsmonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.samsung.android.eventsmonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:16:5-96:19
+31        android:allowBackup="true"
+31-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:17:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] /Users/a1/.gradle/caches/transforms-3/6492d4be1dafc14eeb126acfa6937b10/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@drawable/ic_launcher"
+35-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:18:9-45
+36        android:label="@string/app_name"
+36-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:19:9-41
+37        android:supportsRtl="true"
+37-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:20:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.MaterialComponents.NoActionBar" >
+39-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:21:9-68
+40        <service
+40-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:22:9-30:19
+41            android:name="com.samsung.android.eventsmonitor.MessageService"
+41-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:23:13-43
+42            android:enabled="true"
+42-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:24:13-35
+43            android:exported="true" >
+43-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:25:13-36
+44            <intent-filter>
+44-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:26:13-29:29
+45                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+45-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:27:17-90
+45-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:27:25-88
+46
+47                <data
+47-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:28:17-93
+48                    android:host="*"
+48-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:28:45-61
+49                    android:pathPrefix="/my_path"
+49-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:28:62-91
+50                    android:scheme="wear" />
+50-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:28:23-44
+51            </intent-filter>
+52        </service>
+53
+54        <uses-library
+54-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:32:9-34:39
+55            android:name="com.google.android.wearable"
+55-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:33:13-55
+56            android:required="true" />
+56-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:34:13-36
+57        <!--
+58               Set to true if your app is Standalone, that is, it does not require the handheld
+59               app to run.
+60        -->
+61        <meta-data
+61-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:39:9-41:36
+62            android:name="com.google.android.wearable.standalone"
+62-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:40:13-66
+63            android:value="true" />
+63-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:41:13-33
+64
+65        <activity
+65-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:43:9-46:66
+66            android:name="com.samsung.android.eventsmonitor.SeizureEndActivity"
+66-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:44:13-47
+67            android:exported="false"
+67-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:45:13-37
+68            android:label="@string/title_activity_seizure_end" />
+68-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:46:13-63
+69        <activity
+69-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:47:9-50:59
+70            android:name="com.samsung.android.eventsmonitor.CallActivity"
+70-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:48:13-41
+71            android:exported="false"
+71-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:49:13-37
+72            android:label="@string/title_activity_call" />
+72-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:50:13-56
+73        <activity
+73-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:51:9-54:60
+74            android:name="com.samsung.android.eventsmonitor.SoundActivity"
+74-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:52:13-42
+75            android:exported="false"
+75-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:53:13-37
+76            android:label="@string/title_activity_sound" />
+76-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:54:13-57
+77        <activity
+77-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:55:9-58:66
+78            android:name="com.samsung.android.eventsmonitor.AfterEventActivity"
+78-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:56:13-47
+79            android:exported="true"
+79-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:57:13-36
+80            android:label="@string/title_activity_after_event" />
+80-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:58:13-63
+81        <activity
+81-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:59:9-67:20
+82            android:name="com.samsung.android.eventsmonitor.MainActivity"
+82-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:60:13-41
+83            android:exported="true" >
+83-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:61:13-36
+84            <intent-filter>
+84-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:62:13-66:29
+85                <action android:name="android.intent.action.MAIN" />
+85-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:63:17-69
+85-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:63:25-66
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+87-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:65:17-77
+87-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:65:27-74
+88            </intent-filter>
+89        </activity>
+90
+91        <service
+91-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:69:9-72:111
+92            android:name="com.samsung.android.eventsmonitor.PassiveHealthEventService"
+92-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:70:13-54
+93            android:exported="true"
+93-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:71:13-36
+94            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" /> <!-- Receiver that re-registers for background data after a device restart. -->
+94-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:72:13-108
+95        <receiver
+95-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:73:9-79:20
+96            android:name="com.samsung.android.eventsmonitor.StartupReceiver"
+96-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:74:13-44
+97            android:exported="true" >
+97-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:75:13-36
+98            <intent-filter>
+98-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:76:13-78:29
+99                <action android:name="android.intent.action.BOOT_COMPLETED" />
+99-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:77:17-79
+99-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:77:25-76
+100            </intent-filter>
+101        </receiver>
+102        <!--
+103 Our application implements Configuration.Provider, so we don't need this to initialize
+104             WorkManager.
+105        -->
+106        <provider
+107            android:name="androidx.startup.InitializationProvider"
+107-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:85:13-67
+108            android:authorities="com.samsung.android.eventsmonitor.androidx-startup"
+108-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:86:13-68
+109            android:exported="false" >
+109-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:87:13-37
+110            <meta-data
+110-->[androidx.emoji2:emoji2:1.2.0] /Users/a1/.gradle/caches/transforms-3/2dfa71af9bee3680306de911b0d6d834/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+111-->[androidx.emoji2:emoji2:1.2.0] /Users/a1/.gradle/caches/transforms-3/2dfa71af9bee3680306de911b0d6d834/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+112                android:value="androidx.startup" />
+112-->[androidx.emoji2:emoji2:1.2.0] /Users/a1/.gradle/caches/transforms-3/2dfa71af9bee3680306de911b0d6d834/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+113            <meta-data
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/a1/.gradle/caches/transforms-3/bb5b42d5797c4ee7606f08b968644baa/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/a1/.gradle/caches/transforms-3/bb5b42d5797c4ee7606f08b968644baa/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+115                android:value="androidx.startup" />
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/a1/.gradle/caches/transforms-3/bb5b42d5797c4ee7606f08b968644baa/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+116        </provider>
+117
+118        <activity
+118-->[com.google.android.gms:play-services-base:18.0.1] /Users/a1/.gradle/caches/transforms-3/9ce0033f39c7c83f18aff9110b9dec1c/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+119            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+119-->[com.google.android.gms:play-services-base:18.0.1] /Users/a1/.gradle/caches/transforms-3/9ce0033f39c7c83f18aff9110b9dec1c/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+120            android:exported="false"
+120-->[com.google.android.gms:play-services-base:18.0.1] /Users/a1/.gradle/caches/transforms-3/9ce0033f39c7c83f18aff9110b9dec1c/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+121-->[com.google.android.gms:play-services-base:18.0.1] /Users/a1/.gradle/caches/transforms-3/9ce0033f39c7c83f18aff9110b9dec1c/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+122
+123        <meta-data
+123-->[com.google.android.gms:play-services-basement:18.0.0] /Users/a1/.gradle/caches/transforms-3/2940f9ccd797c3d5c3ae6b24d7dd2d31/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+124            android:name="com.google.android.gms.version"
+124-->[com.google.android.gms:play-services-basement:18.0.0] /Users/a1/.gradle/caches/transforms-3/2940f9ccd797c3d5c3ae6b24d7dd2d31/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+125            android:value="@integer/google_play_services_version" />
+125-->[com.google.android.gms:play-services-basement:18.0.0] /Users/a1/.gradle/caches/transforms-3/2940f9ccd797c3d5c3ae6b24d7dd2d31/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+126
+127        <service
+127-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:24:9-31:19
+128            android:name="androidx.health.services.client.VersionApiService"
+128-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:25:13-77
+129            android:exported="true"
+129-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:26:13-36
+130            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" >
+130-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:27:13-108
+131            <intent-filter>
+131-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:28:13-30:29
+132                <action android:name="hs.versionclient.BIND" />
+132-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:29:17-64
+132-->[androidx.health:health-services-client:1.0.0-beta01] /Users/a1/.gradle/caches/transforms-3/0294d60df423bde6ba9386656e92baa2/transformed/health-services-client-1.0.0-beta01/AndroidManifest.xml:29:25-61
+133            </intent-filter>
+134        </service>
+135        <service
+135-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+136            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+136-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+137            android:directBootAware="false"
+137-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+138            android:enabled="@bool/enable_system_alarm_service_default"
+138-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+139            android:exported="false" />
+139-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+140        <service
+140-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+141            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+141-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+142            android:directBootAware="false"
+142-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+143            android:enabled="@bool/enable_system_job_service_default"
+143-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+144            android:exported="true"
+144-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+145            android:permission="android.permission.BIND_JOB_SERVICE" />
+145-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+146        <service
+146-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+147            android:name="androidx.work.impl.foreground.SystemForegroundService"
+147-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+148            android:directBootAware="false"
+148-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+149            android:enabled="@bool/enable_system_foreground_service_default"
+149-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+150            android:exported="false" />
+150-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+151
+152        <receiver
+152-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+153            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+153-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+154            android:directBootAware="false"
+154-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+155            android:enabled="true"
+155-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+156            android:exported="false" />
+156-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+157        <receiver
+157-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+158            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+158-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+160            android:enabled="false"
+160-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+161            android:exported="false" >
+161-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+162            <intent-filter>
+162-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+163                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+163-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+163-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+164                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+164-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+164-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+165            </intent-filter>
+166        </receiver>
+167        <receiver
+167-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+168            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+168-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+169            android:directBootAware="false"
+169-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+170            android:enabled="false"
+170-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+171            android:exported="false" >
+171-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+172            <intent-filter>
+172-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+173                <action android:name="android.intent.action.BATTERY_OKAY" />
+173-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+173-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+174                <action android:name="android.intent.action.BATTERY_LOW" />
+174-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+174-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+175            </intent-filter>
+176        </receiver>
+177        <receiver
+177-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+178            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+178-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+179            android:directBootAware="false"
+179-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+180            android:enabled="false"
+180-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+181            android:exported="false" >
+181-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+182            <intent-filter>
+182-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+183                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+183-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+183-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+184                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+184-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+184-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+185            </intent-filter>
+186        </receiver>
+187        <receiver
+187-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+188            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+188-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+189            android:directBootAware="false"
+189-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+190            android:enabled="false"
+190-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+192            <intent-filter>
+192-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+193                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+193-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+193-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+194            </intent-filter>
+195        </receiver>
+196        <receiver
+196-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+197            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+197-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+198            android:directBootAware="false"
+198-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+199            android:enabled="false"
+199-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+200            android:exported="false" >
+200-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+201            <intent-filter>
+201-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+202                <action android:name="android.intent.action.BOOT_COMPLETED" />
+202-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:77:17-79
+202-->/Users/a1/android_workplace/EventsMonitorWithPhone/wear/src/main/AndroidManifest.xml:77:25-76
+203                <action android:name="android.intent.action.TIME_SET" />
+203-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+203-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+204                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+204-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+204-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+205            </intent-filter>
+206        </receiver>
+207        <receiver
+207-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+208            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+208-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+210            android:enabled="@bool/enable_system_alarm_service_default"
+210-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+211            android:exported="false" >
+211-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+212            <intent-filter>
+212-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+213                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+213-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+213-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+214            </intent-filter>
+215        </receiver>
+216        <receiver
+216-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+217            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+217-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+218            android:directBootAware="false"
+218-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+219            android:enabled="true"
+219-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+220            android:exported="true"
+220-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+221            android:permission="android.permission.DUMP" >
+221-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+222            <intent-filter>
+222-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+223                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+223-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+223-->[androidx.work:work-runtime:2.7.1] /Users/a1/.gradle/caches/transforms-3/76b95b38fdb816b27452bdab66c9c2d2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+224            </intent-filter>
+225        </receiver>
+226
+227        <service
+227-->[androidx.room:room-runtime:2.2.5] /Users/a1/.gradle/caches/transforms-3/26467b1c18a2324e228c02a0eeaa8c06/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+228            android:name="androidx.room.MultiInstanceInvalidationService"
+228-->[androidx.room:room-runtime:2.2.5] /Users/a1/.gradle/caches/transforms-3/26467b1c18a2324e228c02a0eeaa8c06/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+229            android:directBootAware="true"
+229-->[androidx.room:room-runtime:2.2.5] /Users/a1/.gradle/caches/transforms-3/26467b1c18a2324e228c02a0eeaa8c06/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+230            android:exported="false" />
+230-->[androidx.room:room-runtime:2.2.5] /Users/a1/.gradle/caches/transforms-3/26467b1c18a2324e228c02a0eeaa8c06/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+231    </application>
+232
+233</manifest>

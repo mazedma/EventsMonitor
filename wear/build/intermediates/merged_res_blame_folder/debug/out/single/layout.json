@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-mergeDebugResources-38:/layout/activity_main.xml",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-mergeDebugResources-38:/layout/activity_call.xml",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-main-41:/layout/activity_call.xml"
+    },
+    {
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-mergeDebugResources-38:/layout/activity_after_event.xml",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-main-41:/layout/activity_after_event.xml"
+    },
+    {
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-mergeDebugResources-38:/layout/activity_seizure_end.xml",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-main-41:/layout/activity_seizure_end.xml"
+    },
+    {
+        "merged": "com.samsung.android.eventsmonitor.wear-mergeDebugResources-38:/layout/activity_seizure_end.xml",
+        "source": "com.samsung.android.eventsmonitor.wear-main-41:/layout/activity_seizure_end.xml"
+    },
+    {
+        "merged": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-mergeDebugResources-38:/layout/activity_sound.xml",
+        "source": "/Users/a1/.gradle/daemon/7.5/com.samsung.android.eventsmonitor.wear-main-41:/layout/activity_sound.xml"
+    }
+]

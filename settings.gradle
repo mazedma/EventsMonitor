@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "EventsMonitor"
-include ':app'
+include ':wear'
 include ':phone'
