@@ -30,6 +30,8 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.samsung.android.eventsmonitor.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
@@ -41,6 +43,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var permissionLauncher: ActivityResultLauncher<String>
     private var permissionGranted: Boolean = false
+    private var CALL_PHONE_PERMISSION_REQUEST_CODE = 123
 
     //미디어플레이어 선언
     var mediaPlayer : MediaPlayer?= null
@@ -52,6 +55,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // 앱 실행 시 권한 요청
+        requestCallPhonePermission()
 
         // 음성출력 볼륨 최대로
 //        val audio = this.getSystemService(Context.AUDIO_SERVICE) as AudioManager
@@ -70,6 +76,19 @@ class MainActivity : AppCompatActivity() {
         if (!getPermissionGranted()) {
             requestPermissions()
             return
+        }
+    }
+
+    private fun requestCallPhonePermission() {
+        // 전화 걸기 권한이 이미 허용되어 있는지 확인
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+        } else {
+            // 사용자에게 권한 요청 다이얼로그 표시
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.CALL_PHONE),
+                CALL_PHONE_PERMISSION_REQUEST_CODE
+            )
         }
     }
 
