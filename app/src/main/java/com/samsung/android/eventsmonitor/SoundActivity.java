@@ -2,6 +2,7 @@ package com.samsung.android.eventsmonitor;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -84,14 +85,28 @@ public class SoundActivity extends AppCompatActivity {
         }
     }
 
+//    private void startCallActivity() {
+//        if (!activityStopped) {
+//            activityStopped = true;
+//            handler.removeCallbacks(stopActivityRunnable);
+//            String eventTime = convertMillisToEventTime(eventTimeInMillis);
+//            Intent intent = new Intent(SoundActivity.this, CallActivity.class);
+//            intent.putExtra("eventTime", eventTime);
+//            startActivity(intent);
+//            finish();
+//        }
+//    }
+
     private void startCallActivity() {
         if (!activityStopped) {
             activityStopped = true;
             handler.removeCallbacks(stopActivityRunnable);
-            String eventTime = convertMillisToEventTime(eventTimeInMillis);
-            Intent intent = new Intent(SoundActivity.this, CallActivity.class);
-            intent.putExtra("eventTime", eventTime);
-            startActivity(intent);
+
+            // 119에 전화를 거는 인텐트를 생성
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
+            callIntent.setData(Uri.parse("tel:01035237687"));
+            startActivity(callIntent);
+
             finish();
         }
     }
